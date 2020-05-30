@@ -1,0 +1,15 @@
+{
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "react-app", 
+    "prettier/react",
+    "eslint-config-prettier"
+  ],
+  "rules": {
+    "semi": 0
+  }
+}

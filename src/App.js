@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-function getTitle (title) {
+function getTitle(title) {
   return title
 }
 const list = [
@@ -21,25 +21,22 @@ const list = [
     points: 5,
     objectID: 1,
   },
-];
+]
 
 function List() {
-  return (
-    list.map( function (item) {
-      return (
-        <div key={item.objectID}>
-          <span>
-            <a href={item.url}>{item.title}</a>
-          </span>
-          <span>{item.author}</span>
-          <span>{item.num_comments}</span>
-          <span>{item.points}</span>
-        </div>
-      )
-    })
-  )
+  return list.map(function (item) {
+    return (
+      <div key={item.objectID}>
+        <span>
+          <a href={item.url}>{item.title}</a>
+        </span>
+        <span>{item.author}</span>
+        <span>{item.num_comments}</span>
+        <span>{item.points}</span>
+      </div>
+    )
+  })
 }
-
 
 function App() {
   return (
@@ -48,11 +45,11 @@ function App() {
         <h1>Hello {getTitle('React')}</h1>
         <label htmlFor="search">Search: </label>
         <input id="search" type="text" />
-        <hr/>
-        <List/>
+        <hr />
+        <List />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
